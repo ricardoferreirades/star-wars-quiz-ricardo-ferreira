@@ -5,7 +5,10 @@
     var ranking = [];
     var pages = [];
     var API_url = 'https://swapi.co/api/';
+    
+    var before = null;
     var next = null;
+    var itemstoload = 9;
 
     // checking support
     if (typeof(Storage) !== "undefined") {
@@ -75,7 +78,7 @@
 
             this.btnAfter   = this.btnGame.cloneNode(true);
         
-            this.game       = new StarWarsQuiz(120);
+            this.game       = new StarWarsQuiz(1);
             this.gameTime   = this.game.getGameTime();
             var t = this;
             
@@ -177,8 +180,6 @@
         var pg = document.createElement('div');
         pg.classList.add('page');
 
-        pages = pages.sort(function(a, b){return 0.5 - Math.random()});
-
         pages.forEach(function(items) {
             
             items.forEach(function (item, i) {
@@ -198,6 +199,7 @@
                 btnAnswer.type = "submit";
                 inputAnswer.name = 'name';
                 inputAnswer.type = 'text';
+                inputAnswer.value = item.name;
                 inputAnswer.dataset.index= i;
                 inputAnswer.placeholder = 'Resposta';
                 image.src = item.link;
@@ -351,6 +353,7 @@
     Application.prototype.showResult = function () {
         var t = this;
         pages = [];
+        characters = [];
 
         var ld = document.querySelector('.lds-ripple');
         ld.classList.remove('hide');
