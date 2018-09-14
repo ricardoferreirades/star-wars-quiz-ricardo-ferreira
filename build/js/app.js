@@ -78,7 +78,7 @@
 
             this.btnAfter   = this.btnGame.cloneNode(true);
         
-            this.game       = new StarWarsQuiz(1);
+            this.game       = new StarWarsQuiz(120);
             this.gameTime   = this.game.getGameTime();
             var t = this;
             
@@ -199,7 +199,6 @@
                 btnAnswer.type = "submit";
                 inputAnswer.name = 'name';
                 inputAnswer.type = 'text';
-                inputAnswer.value = item.name;
                 inputAnswer.dataset.index= i;
                 inputAnswer.placeholder = 'Resposta';
                 image.src = item.link;
