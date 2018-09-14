@@ -5,12 +5,7 @@
     var ranking = [];
     var pages = [];
     var API_url = 'https://swapi.co/api/';
-    var cx = '012986508515575814453:vj14hgsjwcw';
-    var gurl = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyBQ1fsoxnEgnE6nFUiy5g4LyYtOG5x1eVE&cx='+ 
-        cx +'&searchType=image&imgColorType=color&imgSize=medium&imgType=face';
-    var before = null;
     var next = null;
-    var itemstoload = 9;
 
     // checking support
     if (typeof(Storage) !== "undefined") {
