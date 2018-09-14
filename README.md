@@ -2,7 +2,7 @@
 
 Game criado para teste profissional.
 
-## Instrunções
+## Instruções
 
 Faça o clone do projeto e execute os seguintes comandos:
 
