@@ -1,0 +1,64 @@
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+    &.open {
+        display: flex;
+    }
+
+    .modal__container {
+        background: #ffffff;
+        padding: 1em;
+        position: relative;
+        max-width: 500px;
+    }
+
+    .modal__close {
+        border: 0;
+        background: transparent;
+        font-size: 2em;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        outline: none;
+    }
+
+    .modal__title {
+        text-align: center;
+    }
+
+    table {
+        border-collapse: collapse;
+
+        tr:nth-child(odd) {
+            background: #eaeaea;
+        }
+
+        &.ranking tr:first-child {
+            background: #000000;
+            color: #fff;
+        }
+
+        td {
+            border: 1px solid #000000;
+            padding: .5em;
+
+            &.score {
+                text-align: center;
+            }
+        }
+    }
+}

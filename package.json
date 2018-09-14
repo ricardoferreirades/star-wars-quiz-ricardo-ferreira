@@ -1,0 +1,31 @@
+{
+  "name": "s2it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine --color",
+    "dev": "gulp",
+    "server": "gulp bw-sync"
+  },
+  "keywords": [
+    "star wars",
+    "quiz",
+    "game",
+    "star  wars",
+    "javascript"
+  ],
+  "author": "Ricardo Ferreira",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "browserify": "^16.2.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
