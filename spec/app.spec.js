@@ -9,7 +9,7 @@ describe('Application tests', function() {
 
     describe('Player scoring tests', function() {
         it('should to return the player score', function() {
-            expect(2).toEqual(starQuiz.getPlayerScore())
+            expect(0).toEqual(starQuiz.getPlayerScore())
         });
     });
 })
