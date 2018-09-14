@@ -4,7 +4,7 @@ Game criado para teste profissional.
 
 ## Instruções
 
-Faça o clone do projeto e execute os seguintes comandos:
+Fazer o clone do projeto e executar os seguintes comandos:
 
 ```
 npm install // para instalar as dependências
