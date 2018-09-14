@@ -7,7 +7,8 @@ Game criado para teste profissional.
 Faça o clone do projeto e execute os seguintes comandos:
 
 ```
-npm run dev // para gerar os arquivos finais do projeto
-npm run server // para gerar os arquivos finais do projeto e subir o servidor em http://localhost:3000
+npm install // para instalar as dependências
+npm run dev // para gerar os arquivos finais
+npm run server // para gerar os arquivos finais e subir o servidor em http://localhost:3000
 
 ```
